@@ -1,0 +1,38 @@
+<html>
+<head>
+<style>
+body{
+background:black;
+font-size:30px;
+color:red;
+font-weight:bold;
+text-align:center;
+padding-top:100px;
+}
+p{
+font-size:150px;
+background:white;
+border:10px solid red;
+width:900px;
+font-weight:Digital-7;
+margin:0px auto;
+box-shadow:0px 0px 20px 2px gray inset;
+}
+</style>
+</head>
+<body onload="demo()">
+<h1>Digital Watch</h1>
+<p>12:14</p>
+<script>
+function demo()
+{
+var obj=new Date()
+var p=document.querySelector("p")
+p.innerText=obj.toLocaleTimeString()
+setTimeout(demo,1000)
+
+}
+//setInterval(demo,1000)
+</script>
+</body>
+</html>
